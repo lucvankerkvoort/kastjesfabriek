@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { HashRouter, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/navbar";
+import Home from "./Pages/home";
+import "./styles/import.scss";
 
-function App() {
+const App = (props) => {
+  const [showElement, setShowElement] = useState(false);
+
+  const { handleInfo } = props;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HashRouter basename="/">
+        <Navbar />
+        <Route exact path="/" component={Home} />
+      </HashRouter>
     </div>
   );
-}
+};
 
 export default App;
