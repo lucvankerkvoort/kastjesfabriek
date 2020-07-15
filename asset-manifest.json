@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kastjesfabriek/static/css/main.bc57d5ef.chunk.css",
+    "main.css": "/kastjesfabriek/static/css/main.cbf5e55f.chunk.css",
     "main.js": "/kastjesfabriek/static/js/main.b87a4dc4.chunk.js",
     "main.js.map": "/kastjesfabriek/static/js/main.b87a4dc4.chunk.js.map",
     "runtime-main.js": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js",
@@ -8,15 +8,15 @@
     "static/js/2.57372f3a.chunk.js": "/kastjesfabriek/static/js/2.57372f3a.chunk.js",
     "static/js/2.57372f3a.chunk.js.map": "/kastjesfabriek/static/js/2.57372f3a.chunk.js.map",
     "index.html": "/kastjesfabriek/index.html",
-    "precache-manifest.6b598724efa5e4783e1d02e80be623f3.js": "/kastjesfabriek/precache-manifest.6b598724efa5e4783e1d02e80be623f3.js",
+    "precache-manifest.7f8209f623549d028059ccd77c1af50c.js": "/kastjesfabriek/precache-manifest.7f8209f623549d028059ccd77c1af50c.js",
     "service-worker.js": "/kastjesfabriek/service-worker.js",
-    "static/css/main.bc57d5ef.chunk.css.map": "/kastjesfabriek/static/css/main.bc57d5ef.chunk.css.map",
+    "static/css/main.cbf5e55f.chunk.css.map": "/kastjesfabriek/static/css/main.cbf5e55f.chunk.css.map",
     "static/js/2.57372f3a.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.57372f3a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f40a0b4d.js",
     "static/js/2.57372f3a.chunk.js",
-    "static/css/main.bc57d5ef.chunk.css",
+    "static/css/main.cbf5e55f.chunk.css",
     "static/js/main.b87a4dc4.chunk.js"
   ]
 }
