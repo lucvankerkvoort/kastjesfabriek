@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  .logo {
+    width: 20%;
+    display: flex;
+    border: 2px solid black;
+  }
+  .navbar-items {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+  }
+}

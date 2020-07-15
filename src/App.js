@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/home";
-import "./styles/import.scss";
+import "./Styles/import.scss";
 
 const App = (props) => {
   const [showElement, setShowElement] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import { StateProvider } from "./services/Store";
+import { StateProvider } from "./Services/Store";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
