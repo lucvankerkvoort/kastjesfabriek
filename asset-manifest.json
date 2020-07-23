@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/kastjesfabriek/static/css/main.05a0c3ff.chunk.css",
-    "main.js": "/kastjesfabriek/static/js/main.14c78623.chunk.js",
-    "main.js.map": "/kastjesfabriek/static/js/main.14c78623.chunk.js.map",
+    "main.css": "/kastjesfabriek/static/css/main.dd2bc05e.chunk.css",
+    "main.js": "/kastjesfabriek/static/js/main.d3d9bfcc.chunk.js",
+    "main.js.map": "/kastjesfabriek/static/js/main.d3d9bfcc.chunk.js.map",
     "runtime-main.js": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js",
     "runtime-main.js.map": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js.map",
-    "static/js/2.52ea4eb9.chunk.js": "/kastjesfabriek/static/js/2.52ea4eb9.chunk.js",
-    "static/js/2.52ea4eb9.chunk.js.map": "/kastjesfabriek/static/js/2.52ea4eb9.chunk.js.map",
+    "static/js/2.d197a71c.chunk.js": "/kastjesfabriek/static/js/2.d197a71c.chunk.js",
+    "static/js/2.d197a71c.chunk.js.map": "/kastjesfabriek/static/js/2.d197a71c.chunk.js.map",
     "index.html": "/kastjesfabriek/index.html",
-    "precache-manifest.4eacb6088bf984722c8a56df9b3fdfd7.js": "/kastjesfabriek/precache-manifest.4eacb6088bf984722c8a56df9b3fdfd7.js",
+    "precache-manifest.166642d0c78f51442335842386970ade.js": "/kastjesfabriek/precache-manifest.166642d0c78f51442335842386970ade.js",
     "service-worker.js": "/kastjesfabriek/service-worker.js",
-    "static/css/main.05a0c3ff.chunk.css.map": "/kastjesfabriek/static/css/main.05a0c3ff.chunk.css.map",
-    "static/js/2.52ea4eb9.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.52ea4eb9.chunk.js.LICENSE.txt",
+    "static/css/main.dd2bc05e.chunk.css.map": "/kastjesfabriek/static/css/main.dd2bc05e.chunk.css.map",
+    "static/js/2.d197a71c.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.d197a71c.chunk.js.LICENSE.txt",
+    "static/media/IMG-20200720-WA0002.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0002.32882860.jpg",
+    "static/media/IMG-20200720-WA0004.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0004.3fd46ddc.jpg",
+    "static/media/IMG-20200720-WA0005.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0005.140060f6.jpg",
+    "static/media/IMG-20200720-WA0006.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0006.81bf48ed.jpg",
+    "static/media/IMG-20200720-WA0007.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0007.51764ab4.jpg",
+    "static/media/IMG-20200720-WA0008.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0008.af3ce155.jpg",
+    "static/media/IMG-20200720-WA0009.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0009.c09abf50.jpg",
     "static/media/Logo.png": "/kastjesfabriek/static/media/Logo.e44725f8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f40a0b4d.js",
-    "static/js/2.52ea4eb9.chunk.js",
-    "static/css/main.05a0c3ff.chunk.css",
-    "static/js/main.14c78623.chunk.js"
+    "static/js/2.d197a71c.chunk.js",
+    "static/css/main.dd2bc05e.chunk.css",
+    "static/js/main.d3d9bfcc.chunk.js"
   ]
 }
