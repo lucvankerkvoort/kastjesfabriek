@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../Logo.png";
+import image from "../../Images/images";
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
         <Link to="/" style={{ textDecoration: "none", color: "black" }}>
-          <img src={Logo} alt="logo" width="75px" height="75px" />
+          <img src={image.Logo} alt="logo" width="75px" height="75px" />
         </Link>
       </div>
       <div className="navbar-items">

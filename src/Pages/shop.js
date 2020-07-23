@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import Items from "../Components/Items/item";
+import images from "../Images/images";
 
 const Shop = () => {
-  return <div className="shop"></div>;
+  return (
+    <div className="shop">
+      <Items
+        title="Antraciet Grijze Kast"
+        price="150"
+        pics={[images.antracietGrijs001, images.antracietGrijs002]}
+      />
+      <Items
+        title="Bruine Kast"
+        price="150"
+        pics={[images.bruin001, images.bruin002]}
+      />
+      <Items
+        title="Donker Groene Kast"
+        price="150"
+        pics={[images.donkerGroen001]}
+      />
+    </div>
+  );
 };
 
 export default Shop;
