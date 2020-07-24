@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kastjesfabriek/static/css/main.8972325d.chunk.css",
-    "main.js": "/kastjesfabriek/static/js/main.bc6f70c6.chunk.js",
-    "main.js.map": "/kastjesfabriek/static/js/main.bc6f70c6.chunk.js.map",
+    "main.css": "/kastjesfabriek/static/css/main.b2923d9d.chunk.css",
+    "main.js": "/kastjesfabriek/static/js/main.7ad5dcbe.chunk.js",
+    "main.js.map": "/kastjesfabriek/static/js/main.7ad5dcbe.chunk.js.map",
     "runtime-main.js": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js",
     "runtime-main.js.map": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js.map",
     "static/js/2.6ce5fcf6.chunk.js": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js",
     "static/js/2.6ce5fcf6.chunk.js.map": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js.map",
     "index.html": "/kastjesfabriek/index.html",
-    "precache-manifest.3306cf176c0d4cff000ba8f3cf1b46e6.js": "/kastjesfabriek/precache-manifest.3306cf176c0d4cff000ba8f3cf1b46e6.js",
+    "precache-manifest.56279b3ef475517708a4ede1f55702a9.js": "/kastjesfabriek/precache-manifest.56279b3ef475517708a4ede1f55702a9.js",
     "service-worker.js": "/kastjesfabriek/service-worker.js",
-    "static/css/main.8972325d.chunk.css.map": "/kastjesfabriek/static/css/main.8972325d.chunk.css.map",
+    "static/css/main.b2923d9d.chunk.css.map": "/kastjesfabriek/static/css/main.b2923d9d.chunk.css.map",
     "static/js/2.6ce5fcf6.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js.LICENSE.txt",
     "static/media/IMG-20200720-WA0002.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0002.32882860.jpg",
     "static/media/IMG-20200720-WA0004.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0004.3fd46ddc.jpg",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.f40a0b4d.js",
     "static/js/2.6ce5fcf6.chunk.js",
-    "static/css/main.8972325d.chunk.css",
-    "static/js/main.bc6f70c6.chunk.js"
+    "static/css/main.b2923d9d.chunk.css",
+    "static/js/main.7ad5dcbe.chunk.js"
   ]
 }
