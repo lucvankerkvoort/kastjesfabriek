@@ -8,16 +8,19 @@ const Shop = () => {
       <Items
         title="Antraciet Grijze Kast"
         price="150"
+        sold={true}
         pics={[images.antracietGrijs001, images.antracietGrijs002]}
       />
       <Items
         title="Bruine Kast"
         price="150"
+        sold={true}
         pics={[images.bruin001, images.bruin002]}
       />
       <Items
         title="Donker Groene Kast"
         price="150"
+        sold={false}
         pics={[images.donkerGroen001]}
       />
     </div>
