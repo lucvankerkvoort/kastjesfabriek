@@ -2,6 +2,10 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  .back-to-shopping {
+    position: absolute;
+    left: 0px;
+  }
   .title-spec {
     display: flex;
     justify-content: center;

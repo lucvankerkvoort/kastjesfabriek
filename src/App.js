@@ -16,8 +16,8 @@ const App = (props) => {
       <HashRouter basename="/">
         <Navbar />
         <Route exact path="/" component={Home} />
-        <Route path="/help" component={Help} />
-        <Route path="/about" component={About} />
+        {/* <Route path="/help" component={Help} /> */}
+        {/* <Route path="/about" component={About} /> */}
         <Route path="/shop" component={Shop} />
         <Route path="/spec" component={Specification} />
       </HashRouter>

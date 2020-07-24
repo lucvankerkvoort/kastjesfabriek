@@ -23,6 +23,17 @@ const Shop = () => {
         sold={false}
         pics={[images.donkerGroen001]}
       />
+      <Items
+        title="Army Green Kast"
+        price="150"
+        sold={false}
+        pics={[
+          images.armyGreen001,
+          images.armyGreen002,
+          images.armyGreen003,
+          images.armyGreen004,
+        ]}
+      />
     </div>
   );
 };

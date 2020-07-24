@@ -16,12 +16,12 @@ const Navbar = () => {
         <Link to="/shop" style={{ textDecoration: "none", color: "black" }}>
           <p> Shop </p>
         </Link>
-        <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
+        {/* <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
           <p> About </p>
         </Link>
         <Link to="/help" style={{ textDecoration: "none", color: "black" }}>
           <p> Help </p>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
