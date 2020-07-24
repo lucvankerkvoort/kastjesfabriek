@@ -19,12 +19,14 @@ const Specification = () => {
     <div className="specification">
       <div className="title-spec">
         <Link className="back-to-shopping" to="/shop">
-          Terug
+          <p>terug</p>
         </Link>
         <h1>{title}</h1>
       </div>
       <div className="product-spec">
-        <Gallery picture={pics} />
+        <div className="picture-spec">
+          <Gallery picture={pics} />
+        </div>
         <div className="detail-spec">
           <p>Omschrijving: {description}</p>
           <p>Prijs: €{price},-</p>
