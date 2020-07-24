@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "52e4fb71878d144f3e9549c2855bec6d",
+    "revision": "01e67d459e9e84952ef89c599288dbab",
     "url": "/kastjesfabriek/index.html"
   },
   {
-    "revision": "3b52cd78133e9e72fc5c",
-    "url": "/kastjesfabriek/static/css/main.dd2bc05e.chunk.css"
+    "revision": "170adc11ee87e5a1a4fb",
+    "url": "/kastjesfabriek/static/css/main.c1083ae6.chunk.css"
   },
   {
-    "revision": "dfcc0d91bf1a240d2550",
-    "url": "/kastjesfabriek/static/js/2.d197a71c.chunk.js"
+    "revision": "a0facea0ab86d0b2249b",
+    "url": "/kastjesfabriek/static/js/2.fe392c64.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/kastjesfabriek/static/js/2.d197a71c.chunk.js.LICENSE.txt"
+    "url": "/kastjesfabriek/static/js/2.fe392c64.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b52cd78133e9e72fc5c",
-    "url": "/kastjesfabriek/static/js/main.d3d9bfcc.chunk.js"
+    "revision": "170adc11ee87e5a1a4fb",
+    "url": "/kastjesfabriek/static/js/main.e9d974c4.chunk.js"
   },
   {
     "revision": "a5de98025943a408367e",
