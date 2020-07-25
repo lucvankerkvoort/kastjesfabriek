@@ -1,5 +1,6 @@
 .item {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   flex-direction: column;
   width: 300px;
   margin: 10px;
