@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db6423954bdc6e66969fa26498e129da",
+    "revision": "7273146529f277620308ae8a097bfffb",
     "url": "/kastjesfabriek/index.html"
   },
   {
