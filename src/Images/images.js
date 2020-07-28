@@ -10,6 +10,8 @@ import armyGreen001 from "./army_green001.jpg";
 import armyGreen002 from "./army_green002.jpeg";
 import armyGreen003 from "./army_green003.jpeg";
 import armyGreen004 from "./army_green004.jpeg";
+import instagram from "./instagram.png";
+import facebook from "./facebook.png";
 
 export default {
   antracietGrijs001,
@@ -24,4 +26,6 @@ export default {
   armyGreen002,
   armyGreen003,
   armyGreen004,
+  instagram,
+  facebook,
 };

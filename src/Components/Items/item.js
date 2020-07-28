@@ -13,30 +13,30 @@ const Items = ({ title, price, pics, sold }) => {
   };
 
   return (
-    <div className="item">
-      <div className="picture">
-        <Link
-          onClick={() => dispatch({ type: "current", payload: props })}
-          to="/spec"
-        >
+    <Link
+      style={{ textDecoration: "none", color: "black" }}
+      onClick={() => dispatch({ type: "current", payload: props })}
+      to="/spec"
+    >
+      <div className="item">
+        <div className="picture">
           <div
             style={{
               background: `url(${pics[0]})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           />
-        </Link>
+        </div>
+        <div className="title">
+          <h1>{title}</h1>
+        </div>
+        {sold ? <SoldBanner /> : null}
+        <div className="price">
+          <p>€{price},00</p>
+        </div>
       </div>
-      <div className="title">
-        <h1>{title}</h1>
-      </div>
-      {sold ? <SoldBanner /> : null}
-      <div className="price">
-        <p>€{price},00</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 

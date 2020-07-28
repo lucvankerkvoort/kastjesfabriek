@@ -1,12 +1,25 @@
 import React from "react";
-import image from "../../Images/images";
 
-const Jumbotron = ({ title }) => {
+const Jumbotron = ({ title, backgroundPicture, logo, text }) => {
   return (
-    <div className="jumbotron">
-      <img src={image.Logo} alt="logo" width="100px" height="100px" />
-      <h1>{title}</h1>
-    </div>
+    <>
+      <div className="jumbotron-content">
+        {logo ? (
+          <img src={logo} alt="logo" width="100px" height="100px" />
+        ) : null}
+        <h1>{title}</h1>
+        <p>{text}</p>
+      </div>
+      <div
+        className="jumbotron"
+        style={{
+          background: backgroundPicture ? `url(${backgroundPicture})` : "white",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="layer" />
+      </div>
+    </>
   );
 };
 

@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 25vh;
+  background: rgba($color: gray, $alpha: 0.2);
+  .footer-links {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    // border: 2px solid black;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-top: 1px solid gray;
+    padding: 0px 150px;
+    .links {
+      //   border: 2px solid black;
+    }
+  }
+}
