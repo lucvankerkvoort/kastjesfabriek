@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kastjesfabriek/static/css/main.3ba291a8.chunk.css",
-    "main.js": "/kastjesfabriek/static/js/main.7ad5dcbe.chunk.js",
-    "main.js.map": "/kastjesfabriek/static/js/main.7ad5dcbe.chunk.js.map",
+    "main.css": "/kastjesfabriek/static/css/main.9f9c7ef2.chunk.css",
+    "main.js": "/kastjesfabriek/static/js/main.085d84e1.chunk.js",
+    "main.js.map": "/kastjesfabriek/static/js/main.085d84e1.chunk.js.map",
     "runtime-main.js": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js",
     "runtime-main.js.map": "/kastjesfabriek/static/js/runtime-main.f40a0b4d.js.map",
-    "static/js/2.6ce5fcf6.chunk.js": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js",
-    "static/js/2.6ce5fcf6.chunk.js.map": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js.map",
+    "static/js/2.59cf7d3f.chunk.js": "/kastjesfabriek/static/js/2.59cf7d3f.chunk.js",
+    "static/js/2.59cf7d3f.chunk.js.map": "/kastjesfabriek/static/js/2.59cf7d3f.chunk.js.map",
     "index.html": "/kastjesfabriek/index.html",
-    "precache-manifest.787261a32f6371d6a16842f65967ccf9.js": "/kastjesfabriek/precache-manifest.787261a32f6371d6a16842f65967ccf9.js",
+    "precache-manifest.05b9507726906596182fc27bd5387b0c.js": "/kastjesfabriek/precache-manifest.05b9507726906596182fc27bd5387b0c.js",
     "service-worker.js": "/kastjesfabriek/service-worker.js",
-    "static/css/main.3ba291a8.chunk.css.map": "/kastjesfabriek/static/css/main.3ba291a8.chunk.css.map",
-    "static/js/2.6ce5fcf6.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.6ce5fcf6.chunk.js.LICENSE.txt",
+    "static/css/main.9f9c7ef2.chunk.css.map": "/kastjesfabriek/static/css/main.9f9c7ef2.chunk.css.map",
+    "static/js/2.59cf7d3f.chunk.js.LICENSE.txt": "/kastjesfabriek/static/js/2.59cf7d3f.chunk.js.LICENSE.txt",
     "static/media/IMG-20200720-WA0002.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0002.32882860.jpg",
     "static/media/IMG-20200720-WA0004.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0004.3fd46ddc.jpg",
     "static/media/IMG-20200720-WA0005.jpg": "/kastjesfabriek/static/media/IMG-20200720-WA0005.140060f6.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f40a0b4d.js",
-    "static/js/2.6ce5fcf6.chunk.js",
-    "static/css/main.3ba291a8.chunk.css",
-    "static/js/main.7ad5dcbe.chunk.js"
+    "static/js/2.59cf7d3f.chunk.js",
+    "static/css/main.9f9c7ef2.chunk.css",
+    "static/js/main.085d84e1.chunk.js"
   ]
 }
