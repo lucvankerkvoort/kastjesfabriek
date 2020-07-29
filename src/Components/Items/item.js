@@ -28,7 +28,7 @@ const Items = ({ title, price, pics, sold }) => {
             }}
           />
         </div>
-        <div className="title">
+        <div className="item-title">
           <h1>{title}</h1>
         </div>
         {sold ? <SoldBanner /> : null}

@@ -14,8 +14,8 @@ const Footer = () => {
             <img
               src={Images.instagram}
               alt="insta"
-              width="48px"
-              height="48px"
+              width="36px"
+              height="36px"
             />
           </a>
 
@@ -27,8 +27,8 @@ const Footer = () => {
             <img
               src={Images.facebook}
               alt="facebook"
-              width="48px"
-              height="48px"
+              width="36px"
+              height="36px"
             />
           </a>
         </div>

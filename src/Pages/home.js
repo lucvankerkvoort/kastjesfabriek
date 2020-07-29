@@ -12,7 +12,7 @@ const Home = () => {
         backgroundPicture={Images.verfAquaMarine001}
         text="Vind je het ook zo zonde dat er zoveel spullen afgedankt worden? Ik ook! Daarom ben ik begonnen met de Kastjes Fabriek om oude meubels een tweede kans te geven. Met liefde knap ik alles op tot echte pareltjes! Kijk snel wat er allemaal te koop is."
       />
-      <Title title="Collectie" />
+      <Title title="Collecties" />
       <Collection />
       <Footer />
     </div>

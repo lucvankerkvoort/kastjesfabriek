@@ -11,7 +11,9 @@ const CollectionItem = ({ title, picture }) => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-      ></div>
+      >
+        <div className="collection-layer" />
+      </div>
     </div>
   );
 };
