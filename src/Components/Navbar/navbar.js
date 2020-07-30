@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import image from "../../Images/images";
+import SignOutButton from "../SignOutButton";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -16,6 +17,7 @@ const Navbar = () => {
         <Link to="/shop" style={{ textDecoration: "none", color: "black" }}>
           <p> Shop </p>
         </Link>
+        <SignOutButton />
         {/* <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
           <p> About </p>
         </Link>

@@ -1,14 +1,14 @@
 import React from "react";
-import { StateProvider } from "./Services/Store";
+import Firebase, { FirebaseContext } from "./Firebase/index";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <StateProvider>
+  <FirebaseContext.Provider value={new Firebase()}>
     <App />
-  </StateProvider>,
+  </FirebaseContext.Provider>,
   document.getElementById("root")
 );
 
