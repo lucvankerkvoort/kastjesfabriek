@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Jumbotron from "../Components/Jumbotron/jumbotron";
 import Images from "../Images/images";
 import Title from "../Components/Jumbotron/title";

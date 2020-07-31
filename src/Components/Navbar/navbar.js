@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import image from "../../Images/images";
 import SignOutButton from "../SignOutButton";
+import { store } from "../../Services/Store";
+import FirebaseContext from "../../Firebase/Context";
 const Navbar = () => {
+  const [user, setUser] = useState("");
+  const userData = useContext(store);
+
+  useEffect(() => {
+    setUser(localStorage.getItem("authUser"));
+  }, [userData.state.authed]);
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -17,7 +26,7 @@ const Navbar = () => {
         <Link to="/shop" style={{ textDecoration: "none", color: "black" }}>
           <p> Shop </p>
         </Link>
-        <SignOutButton />
+        {user !== "null" ? <SignOutButton /> : null}
         {/* <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
           <p> About </p>
         </Link>

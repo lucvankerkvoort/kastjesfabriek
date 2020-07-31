@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import { withRouter } from "react-router-dom";
 import { compose } from "recompose";
-
-import { SignUpLink } from "./signup";
+import { store } from "../Services/Store";
 import { withFirebase } from "../Firebase";
 
 const SignInPage = () => (
   <div>
     <h1>SignIn</h1>
     <SignInForm />
-    <SignUpLink />
   </div>
 );
 
@@ -22,18 +20,25 @@ const INITIAL_STATE = {
 class SignInFormBase extends Component {
   constructor(props) {
     super(props);
-
     this.state = { ...INITIAL_STATE };
   }
 
+  static contextType = store;
+
   onSubmit = (event) => {
+    const { dispatch } = this.context;
     const { email, password } = this.state;
 
     this.props.firebase
       .doSignInWithEmailAndPassword(email, password)
-      .then(() => {
+      .then((user) => {
         this.setState({ ...INITIAL_STATE });
+        localStorage.setItem("authUser", JSON.stringify(user.user.l));
+      })
+      .then(() => {
+        dispatch({ type: "authed", payload: true });
         this.props.history.push("/");
+        console.log(localStorage.getItem("authUser"));
       })
       .catch((error) => {
         this.setState({ error });
