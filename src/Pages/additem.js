@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Firebase, { storage } from "../Firebase/Firebase";
+import { storage } from "../Firebase/Firebase";
 
 const AddItem = () => {
   const allInputs = { imgUrl: "" };
@@ -14,6 +14,7 @@ const AddItem = () => {
 
   const handleFireBaseUpload = (e) => {
     e.preventDefault();
+    console.log(storage);
     console.log("start of upload");
     // async magic goes here...
     if (imageAsFile === "") {
