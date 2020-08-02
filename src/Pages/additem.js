@@ -14,7 +14,6 @@ const AddItem = () => {
 
   const handleFireBaseUpload = (e) => {
     e.preventDefault();
-    console.log(storage);
     console.log("start of upload");
     // async magic goes here...
     if (imageAsFile === "") {
@@ -50,6 +49,8 @@ const AddItem = () => {
       }
     );
   };
+
+  console.log(imageAsUrl);
   return (
     <div className="add-item">
       <form onSubmit={handleFireBaseUpload}>

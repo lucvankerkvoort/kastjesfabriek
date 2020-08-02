@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Jumbotron from "../Components/Jumbotron/jumbotron";
 import Images from "../Images/images";
 import Title from "../Components/Jumbotron/title";
 import Footer from "../Components/Footer/footer";
 import Collection from "../Components/Collections/collections";
+import FirebaseContext from "../Firebase/Context";
 const Home = () => {
+  console.log(FirebaseContext);
   return (
     <div className="home">
       <Jumbotron
