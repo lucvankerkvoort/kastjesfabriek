@@ -1,18 +1,31 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Items from "../Components/Items/item";
-import images from "../Images/images";
 import Title from "../Components/Jumbotron/title";
 import Footer from "../Components/Footer/footer";
 import { store } from "../Services/Store";
+import { db } from "../Firebase/Firebase";
 
 const Shop = () => {
+  const [state, setState] = useState("");
   const userData = useContext(store);
-  const { info } = userData.state;
+  const arr = [];
+  useEffect(() => {
+    db.collection("items")
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          arr.push(doc.data());
+          setState(arr);
+        });
+      });
+  }, [userData.state.check]);
+
+  console.log(userData.state.check);
   return (
     <>
       <Title title="Producten" />
       <div className="shop">
-        {info.map((item) => (
+        {(state || []).map((item) => (
           <Items
             title={item.title}
             description={item.description}

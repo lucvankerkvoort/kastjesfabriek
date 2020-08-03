@@ -46,4 +46,15 @@
       font-family: "Kalam";
     }
   }
+  .remove {
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .remove:hover {
+    transform: scale(1.5);
+  }
 }

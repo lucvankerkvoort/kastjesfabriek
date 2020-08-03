@@ -28,7 +28,7 @@ const Navbar = () => {
         </Link>
         {user !== "null" ? <SignOutButton /> : null}
         {user !== "null" ? (
-          <Link to="/input">
+          <Link to="/input" style={{ textDecoration: "none", color: "black" }}>
             <p>Toevoegen</p>
           </Link>
         ) : null}
