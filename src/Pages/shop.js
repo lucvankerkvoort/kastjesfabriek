@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import Items from "../Components/Items/item";
 import images from "../Images/images";
 import Title from "../Components/Jumbotron/title";
 import Footer from "../Components/Footer/footer";
+import { store } from "../Services/Store";
 
 const Shop = () => {
+  const userData = useContext(store);
+  const { info } = userData.state;
   return (
     <>
       <Title title="Producten" />
       <div className="shop">
-        <Items
+        {info.map((item) => (
+          <Items
+            title={item.title}
+            description={item.description}
+            pics={item.images}
+            price={item.price}
+          />
+        ))}
+        {/* <Items
           title="Antraciet Grijze Kast"
           price="150"
           sold={true}
@@ -37,7 +48,7 @@ const Shop = () => {
             images.armyGreen003,
             images.armyGreen004,
           ]}
-        />
+        /> */}
       </div>
       <Footer />
     </>

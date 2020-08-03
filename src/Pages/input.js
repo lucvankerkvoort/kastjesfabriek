@@ -6,21 +6,26 @@ const Input = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
+  const [price, setPrice] = useState("");
 
   const userData = useContext(store);
+  const { dispatch } = userData;
   const submition = (e) => {
     e.preventDefault();
     const info = {
       ...title,
       ...description,
       ...type,
+      ...price,
       images: userData.state.images,
     };
     console.log(title.title);
     db.collection("items")
       .doc(title.title)
       .set(info)
-      .then((res) => console.log(res));
+      .then((res) =>
+        dispatch({ type: "check", payload: !userData.state.check })
+      );
     // console.log(info);
   };
   //   console.log(userData);
@@ -44,6 +49,12 @@ const Input = () => {
           placeholder="Type kast"
           name="type"
           onChange={(e) => setType({ [e.target.name]: e.target.value })}
+        />
+        <input
+          type="text"
+          placeholder="Prijs in euros"
+          name="price"
+          onChange={(e) => setPrice({ [e.target.name]: e.target.value })}
         />
       </form>
       <AddPicture />

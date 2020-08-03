@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import Jumbotron from "../Components/Jumbotron/jumbotron";
 import Images from "../Images/images";
 import Title from "../Components/Jumbotron/title";
 import Footer from "../Components/Footer/footer";
 import Collection from "../Components/Collections/collections";
-import FirebaseContext from "../Firebase/Context";
+import { db } from "../Firebase/Firebase";
+import { store } from "../Services/Store";
 const Home = () => {
-  console.log(FirebaseContext);
+  const userData = useContext(store);
+  useEffect(() => {
+    const arr = [];
+    const { dispatch } = userData;
+    db.collection("items")
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          arr.push(doc.data());
+          dispatch({ type: "info", payload: arr });
+        });
+      });
+  }, [userData.state.check]);
+
+  console.log(userData);
   return (
     <div className="home">
       <Jumbotron
