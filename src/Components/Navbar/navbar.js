@@ -27,6 +27,11 @@ const Navbar = () => {
           <p> Shop </p>
         </Link>
         {user !== "null" ? <SignOutButton /> : null}
+        {user !== "null" ? (
+          <Link to="/input">
+            <p>Toevoegen</p>
+          </Link>
+        ) : null}
         {/* <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
           <p> About </p>
         </Link>

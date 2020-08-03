@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 // voor nu even true!!
-const initialState = { problem: false };
+const initialState = { images: [] };
 const store = createContext(initialState);
 const { Provider } = store;
 
@@ -11,6 +11,8 @@ const StateProvider = ({ children }) => {
         return Object.assign({}, state, { authed: action.payload });
       case "user":
         return Object.assign({}, state, { user: action.payload });
+      case "images":
+        return Object.assign({}, state, { images: action.payload });
       default:
         throw new Error();
     }

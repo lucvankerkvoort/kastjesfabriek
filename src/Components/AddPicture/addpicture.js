@@ -1,7 +1,10 @@
-import React, { useState } from "react";
-import { storage } from "../Firebase/Firebase";
+import React, { useState, useContext } from "react";
+import { storage } from "../../Firebase/Firebase";
+import { store } from "../../Services/Store";
+const AddPicture = () => {
+  const userData = useContext(store);
+  const { dispatch } = userData;
 
-const AddItem = () => {
   const allInputs = { imgUrl: "" };
   const [imageAsFile, setImageAsFile] = useState("");
   const [imageAsUrl, setImageAsUrl] = useState(allInputs);
@@ -41,6 +44,12 @@ const AddItem = () => {
           .child(imageAsFile.name)
           .getDownloadURL()
           .then((fireBaseUrl) => {
+            dispatch({
+              type: "images",
+              payload: userData.state.images
+                ? [...userData.state.images, fireBaseUrl]
+                : [fireBaseUrl],
+            });
             setImageAsUrl((prevObject) => ({
               ...prevObject,
               imgUrl: fireBaseUrl,
@@ -51,6 +60,7 @@ const AddItem = () => {
   };
 
   console.log(imageAsUrl);
+  console.log(userData.state);
   return (
     <div className="add-item">
       <form onSubmit={handleFireBaseUpload}>
@@ -61,4 +71,4 @@ const AddItem = () => {
   );
 };
 
-export default AddItem;
+export default AddPicture;
