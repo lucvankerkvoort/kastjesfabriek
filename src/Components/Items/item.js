@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { store } from "../../Services/Store";
 import { Link } from "react-router-dom";
 import { db } from "../../Firebase/Firebase";
 import SoldBanner from "../SoldBanner/soldBanner";
 
 const Items = ({ title, price, pics, sold, description }) => {
+  const [user, setUser] = useState("");
   const userData = useContext(store);
   const { dispatch } = userData;
   const props = {
@@ -14,6 +15,12 @@ const Items = ({ title, price, pics, sold, description }) => {
     description,
   };
 
+  useEffect(() => {
+    setUser(localStorage.getItem("authUser"));
+  }, [userData.state.authed]);
+
+  console.log(user);
+  console.log(user ? console.log("its on") : console.log("its off"));
   return (
     <div className="item">
       <Link
@@ -38,20 +45,22 @@ const Items = ({ title, price, pics, sold, description }) => {
       <div className="price">
         <p>€{price},00</p>
       </div>
-      <div
-        className="remove"
-        onClick={() =>
-          db
-            .collection("items")
-            .doc(title)
-            .delete()
-            .then(() =>
-              dispatch({ type: "check", payload: !userData.state.check })
-            )
-        }
-      >
-        X
-      </div>
+      {user !== "null" ? (
+        <div
+          className="remove"
+          onClick={() =>
+            db
+              .collection("items")
+              .doc(title)
+              .delete()
+              .then(() =>
+                dispatch({ type: "check", payload: !userData.state.check })
+              )
+          }
+        >
+          X
+        </div>
+      ) : null}
     </div>
   );
 };

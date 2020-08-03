@@ -18,9 +18,8 @@ const Shop = () => {
           setState(arr);
         });
       });
-  }, [userData.state.check]);
+  }, []);
 
-  console.log(userData.state.check);
   return (
     <>
       <Title title="Producten" />
