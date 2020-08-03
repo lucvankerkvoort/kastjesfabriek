@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import AddPicture from "../Components/AddPicture/addpicture";
 import { store } from "../Services/Store";
+import { db } from "../Firebase/Firebase";
 const Input = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -15,9 +16,14 @@ const Input = () => {
       ...type,
       images: userData.state.images,
     };
-    console.log(info);
+    console.log(title.title);
+    db.collection("items")
+      .doc(title.title)
+      .set(info)
+      .then((res) => console.log(res));
+    // console.log(info);
   };
-  console.log(userData);
+  //   console.log(userData);
   return (
     <div className="input">
       <form>
