@@ -5,11 +5,8 @@ const AddPicture = () => {
   const userData = useContext(store);
   const { dispatch } = userData;
 
-  const allInputs = { imgUrl: "" };
   const [imageAsFile, setImageAsFile] = useState("");
-  const [imageAsUrl, setImageAsUrl] = useState(allInputs);
 
-  console.log(imageAsFile);
   const handleImageAsFile = (e) => {
     const image = e.target.files[0];
     setImageAsFile((imageFile) => image);
@@ -30,7 +27,7 @@ const AddPicture = () => {
       "state_changed",
       (snapShot) => {
         //takes a snap shot of the process as it is happening
-        console.log(snapShot);
+        // console.log(snapShot);
       },
       (err) => {
         //catches the errors
@@ -50,22 +47,16 @@ const AddPicture = () => {
                 ? [...userData.state.images, fireBaseUrl]
                 : [fireBaseUrl],
             });
-            setImageAsUrl((prevObject) => ({
-              ...prevObject,
-              imgUrl: fireBaseUrl,
-            }));
           });
       }
     );
   };
 
-  console.log(imageAsUrl);
-  console.log(userData.state);
   return (
     <div className="add-item">
       <form onSubmit={handleFireBaseUpload}>
         <input type="file" onChange={handleImageAsFile} />
-        <button>Upload to Firebase</button>
+        <button>Upload Picture</button>
       </form>
     </div>
   );

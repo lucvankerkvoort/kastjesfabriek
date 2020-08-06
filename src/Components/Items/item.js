@@ -19,8 +19,8 @@ const Items = ({ title, price, pics, sold, description }) => {
     setUser(localStorage.getItem("authUser"));
   }, [userData.state.authed]);
 
-  console.log(user);
-  console.log(user ? console.log("its on") : console.log("its off"));
+  // console.log(user);
+  // console.log(user ? console.log("its on") : console.log("its off"));
   return (
     <div className="item">
       <Link
@@ -32,8 +32,6 @@ const Items = ({ title, price, pics, sold, description }) => {
           <div
             style={{
               background: `url(${pics[0]})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
             }}
           />
         </div>
@@ -53,9 +51,14 @@ const Items = ({ title, price, pics, sold, description }) => {
               .collection("items")
               .doc(title)
               .delete()
-              .then(() =>
-                dispatch({ type: "check", payload: !userData.state.check })
-              )
+              .then(() => {
+                console.log("I Run 2");
+                setTimeout(
+                  () =>
+                    dispatch({ type: "check", payload: !userData.state.check }),
+                  1000
+                );
+              })
           }
         >
           X

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { store } from "../Services/Store";
 import { Link } from "react-router-dom";
 import Gallery from "./gallery";
-import images from "../Images/images";
 
 const Specification = () => {
   const userData = useContext(store);

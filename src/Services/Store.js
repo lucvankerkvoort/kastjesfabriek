@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 // voor nu even true!!
-const initialState = { images: [], check: true };
+const initialState = { images: [] };
 const store = createContext(initialState);
 const { Provider } = store;
 

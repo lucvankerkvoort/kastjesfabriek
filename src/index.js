@@ -7,9 +7,11 @@ import * as serviceWorker from "./serviceWorker";
 import { StateProvider } from "./Services/Store";
 
 ReactDOM.render(
-  <FirebaseContext.Provider value={new Firebase()}>
-    <App />
-  </FirebaseContext.Provider>,
+  <StateProvider>
+    <FirebaseContext.Provider value={new Firebase()}>
+      <App />
+    </FirebaseContext.Provider>
+  </StateProvider>,
   document.getElementById("root")
 );
 

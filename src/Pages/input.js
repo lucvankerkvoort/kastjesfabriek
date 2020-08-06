@@ -7,6 +7,9 @@ const Input = () => {
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
   const [price, setPrice] = useState("");
+  const isInvalid = title === "" || price === "";
+
+  const [message, setMessage] = useState("");
 
   const userData = useContext(store);
   const { dispatch } = userData;
@@ -23,9 +26,12 @@ const Input = () => {
     db.collection("items")
       .doc(title.title)
       .set(info)
-      .then((res) =>
-        dispatch({ type: "check", payload: !userData.state.check })
-      );
+      .then((res) => {
+        console.log(res);
+        // we have to do it here. I forget what but I'll figure it out
+        setMessage("Succesvol");
+        dispatch({ type: "check", payload: !userData.state.check });
+      });
     // console.log(info);
   };
   //   console.log(userData);
@@ -48,7 +54,9 @@ const Input = () => {
           type="text"
           placeholder="Type kast"
           name="type"
-          onChange={(e) => setType({ [e.target.name]: e.target.value })}
+          onChange={(e) =>
+            setType({ [e.target.name]: e.target.value.toLowerCase() })
+          }
         />
         <input
           type="text"
@@ -61,7 +69,10 @@ const Input = () => {
       {(userData.state.images || []).map((pics) => (
         <img src={pics} alt="..." />
       ))}
-      <button onClick={submition}>Uploaden</button>
+      <p className="message">{message}</p>
+      <button disabled={isInvalid} onClick={submition}>
+        Uploaden
+      </button>
     </div>
   );
 };
