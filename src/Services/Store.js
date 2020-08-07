@@ -19,6 +19,8 @@ const StateProvider = ({ children }) => {
         return Object.assign({}, state, { check: action.payload });
       case "current":
         return Object.assign({}, state, { current: action.payload });
+      case "collection":
+        return Object.assign({}, state, { collection: action.payload });
       default:
         throw new Error();
     }

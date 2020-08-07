@@ -7,33 +7,14 @@ import { store } from "../Services/Store";
 const Shop = () => {
   const userData = useContext(store);
   const { info } = userData.state;
-  const fakeData = [
-    {
-      title: "gele kast",
-      description: "hele mooie gele kast",
-      images: [],
-      price: "150",
-    },
-    {
-      title: "groene kast",
-      description: "hele mooie groene kast",
-      images: [],
-      price: "150",
-    },
-    {
-      title: "blauwe kast",
-      description: "hele mooie blauwe kast",
-      images: [],
-      price: "150",
-    },
-  ];
   return (
     <>
       <Title title="Producten" />
       <div className="shop">
-        {(info || []).map((item) => {
+        {(info || []).map((item, i) => {
           return (
             <Items
+              key={i}
               title={item.title}
               description={item.description}
               pics={item.images}

@@ -7,6 +7,8 @@
     height: 200px;
     width: 200px;
     position: relative;
+    background-position: center !important;
+    background-size: cover !important;
     .collection-layer {
       background-color: rgba(95, 68, 10, 0.3);
       position: absolute;

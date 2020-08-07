@@ -4,6 +4,7 @@ import { withFirebase } from "./Firebase";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/home";
 import Input from "./Pages/input";
+import Collection from "./Pages/collection";
 // import Help from "./Pages/help";
 import Shop from "./Pages/shop";
 // import About from "./Pages/about";
@@ -16,9 +17,9 @@ import { db } from "./Firebase/Firebase";
 const App = () => {
   const [collections, setCollections] = useState("");
   const userData = useContext(store);
-  const { dispatch } = userData;
 
   useEffect((arr = []) => {
+    const { dispatch } = userData;
     db.collection("items")
       .get()
       .then((querySnapshot) => {
@@ -39,11 +40,12 @@ const App = () => {
           path="/"
           render={() => <Home collections={collections} />}
         />
+        <Route path="/collection" component={Collection} />
         {/* <Route path="/help" component={Help} /> */}
         {/* <Route path="/about" component={About} /> */}
         <Route path="/shop" component={Shop} />
         <Route path="/login" component={SignInPage} />
-        <Route path="/spec" component={Specification} />
+        <Route path="/spec" render={(props) => <Specification {...props} />} />
         <Route path="/input" component={Input} />
       </HashRouter>
     </div>
