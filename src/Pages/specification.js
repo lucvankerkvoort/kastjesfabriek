@@ -34,15 +34,11 @@ const Specification = (props) => {
   const userData = useContext(store);
 
   if (!userData.state.current) {
-    userData.state.current = {
-      title: "",
-      pics: [],
-      description: "Er ging iets fout, ga terug en klik opnieuw op het product",
-      price: "",
-    };
+    userData.state.current = JSON.parse(localStorage.getItem("current"));
   }
   const { pics, title, description, price } = userData.state.current;
 
+  console.log(userData.state.current);
   return (
     <div className="specification">
       <div className="title-spec">

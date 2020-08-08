@@ -25,7 +25,10 @@ const Items = ({ title, price, pics, sold, description }) => {
     <div className="item">
       <Link
         style={{ textDecoration: "none", color: "black" }}
-        onClick={() => dispatch({ type: "current", payload: props })}
+        onClick={() => {
+          dispatch({ type: "current", payload: props });
+          localStorage.setItem("current", JSON.stringify(props));
+        }}
         to="/spec"
       >
         <div className="picture">
