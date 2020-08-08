@@ -17,7 +17,7 @@ const Home = ({ collections }) => {
     <div className="home">
       <Jumbotron
         title="Kastjes Fabriek"
-        backgroundPicture={Images.verfAquaMarine001}
+        backgroundPicture={Images.jumbotronBackground}
         text="Vind je het ook zo zonde dat er zoveel spullen afgedankt worden? Ik ook! Daarom ben ik begonnen met de Kastjes Fabriek om oude meubels een tweede kans te geven. Met liefde knap ik alles op tot echte pareltjes! Kijk snel wat er allemaal te koop is."
       />
       <Title title="Collecties" />

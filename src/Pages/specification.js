@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { store } from "../Services/Store";
 import Gallery from "./gallery";
+import images from "../Images/images";
 import emailjs from "emailjs-com";
 
 const Specification = (props) => {
@@ -42,9 +43,14 @@ const Specification = (props) => {
   return (
     <div className="specification">
       <div className="title-spec">
-        <p className="back-to-shopping" onClick={() => goBack()}>
-          terug
-        </p>
+        <img
+          src={images.leftArrow}
+          alt="left arrow"
+          width="30px"
+          height="30px"
+          className="back-to-shopping"
+          onClick={() => goBack()}
+        />
         <h1>{title}</h1>
       </div>
       <div className="product-spec">
