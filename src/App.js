@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/shop" component={Shop} />
         <Route path="/login" component={SignInPage} />
         <Route path="/spec" render={(props) => <Specification {...props} />} />
-        <Route path="/input" component={Input} />
+        <Route path="/input" render={(props) => <Input {...props} />} />
       </HashRouter>
     </div>
   );

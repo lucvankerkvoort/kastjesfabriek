@@ -2,7 +2,10 @@ import React, { useContext, useState } from "react";
 import AddPicture from "../Components/AddPicture/addpicture";
 import { store } from "../Services/Store";
 import { db } from "../Firebase/Firebase";
-const Input = () => {
+import Preview from "../Components/Preview";
+
+const Input = (props) => {
+  console.log(props);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [type, setType] = useState("");
@@ -14,13 +17,18 @@ const Input = () => {
   const userData = useContext(store);
   const { dispatch } = userData;
   const submition = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    const arr = [];
+    for (let i = 0; i < userData.state.images.length; i++) {
+      arr.push(userData.state.images[i].image);
+    }
+    console.log(arr);
     const info = {
       ...title,
       ...description,
       ...type,
       ...price,
-      images: userData.state.images,
+      images: arr,
     };
     console.log(title.title);
     db.collection("items")
@@ -28,13 +36,11 @@ const Input = () => {
       .set(info)
       .then((res) => {
         console.log(res);
-        // we have to do it here. I forget what but I'll figure it out
         setMessage("Succesvol");
         dispatch({ type: "check", payload: !userData.state.check });
       });
-    // console.log(info);
   };
-  //   console.log(userData);
+  console.log(userData);
   return (
     <div className="input">
       <form>
@@ -66,9 +72,7 @@ const Input = () => {
         />
       </form>
       <AddPicture />
-      {(userData.state.images || []).map((pics) => (
-        <img src={pics} alt="..." />
-      ))}
+      <Preview />
       <p className="message">{message}</p>
       <button disabled={isInvalid} onClick={submition}>
         Uploaden

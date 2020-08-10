@@ -1,12 +1,9 @@
 import React from "react";
 
-const Jumbotron = ({ title, backgroundPicture, logo, text }) => {
+const Jumbotron = ({ title, backgroundPicture, text }) => {
   return (
     <>
       <div className="jumbotron-content">
-        {logo ? (
-          <img src={logo} alt="logo" width="100px" height="100px" />
-        ) : null}
         <h1>{title}</h1>
         <p>{text}</p>
       </div>
