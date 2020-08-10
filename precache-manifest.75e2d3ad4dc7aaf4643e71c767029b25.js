@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05b5b9bfb5741f4dd2d1680e02705fa2",
+    "revision": "2e6090a64ffc285a3a02fb808de2b80b",
     "url": "/kastjesfabriek/index.html"
   },
   {
-    "revision": "abc247b493b78493caac",
-    "url": "/kastjesfabriek/static/css/main.a1f6bc46.chunk.css"
+    "revision": "15b9d56312787b4e6cc3",
+    "url": "/kastjesfabriek/static/css/main.b633b6c6.chunk.css"
   },
   {
     "revision": "87e25deb588c9f58eda6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kastjesfabriek/static/js/2.cd568875.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "abc247b493b78493caac",
-    "url": "/kastjesfabriek/static/js/main.f23eb3ab.chunk.js"
+    "revision": "15b9d56312787b4e6cc3",
+    "url": "/kastjesfabriek/static/js/main.2992655b.chunk.js"
   },
   {
     "revision": "a5de98025943a408367e",
