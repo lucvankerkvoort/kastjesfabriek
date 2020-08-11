@@ -3,12 +3,10 @@ import { HashRouter, Route } from "react-router-dom";
 import { withFirebase } from "./Firebase";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/home";
-import Input from "./Pages/input";
 import Collection from "./Pages/collection";
 // import Help from "./Pages/help";
 import Shop from "./Pages/shop";
 // import About from "./Pages/about";
-import SignInPage from "./Pages/login";
 import Specification from "./Pages/specification";
 import "./Styles/import.scss";
 import { store } from "./Services/Store";
@@ -44,9 +42,7 @@ const App = () => {
         {/* <Route path="/help" component={Help} /> */}
         {/* <Route path="/about" component={About} /> */}
         <Route path="/shop" component={Shop} />
-        <Route path="/login" component={SignInPage} />
         <Route path="/spec" render={(props) => <Specification {...props} />} />
-        <Route path="/input" render={(props) => <Input {...props} />} />
       </HashRouter>
     </div>
   );

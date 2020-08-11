@@ -6,7 +6,6 @@ const AddPicture = () => {
   const { dispatch } = userData;
 
   const [imageAsFile, setImageAsFile] = useState("");
-  const [replace, setReplace] = useState(false);
 
   const handleImageAsFile = (e) => {
     const image = e.target.files[0];
@@ -42,7 +41,6 @@ const AddPicture = () => {
           .child(imageAsFile.name)
           .getDownloadURL()
           .then((fireBaseUrl) => {
-            setReplace(true);
             dispatch({
               type: "images",
               payload: userData.state.images

@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { storage } from "../../Firebase/Firebase";
+import React, { useContext } from "react";
 import { store } from "../../Services/Store";
 
 const Preview = () => {
@@ -29,11 +28,11 @@ const Preview = () => {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                console.log(item);
-                storage
-                  .ref(`/images/${item.file}`)
-                  .delete()
-                  .then((res) => console.log(res));
+                // console.log(item);
+                // storage
+                //   .ref(`/images/${item.file}`)
+                //   .delete()
+                //   .then((res) => console.log(res));
                 removeFromImages(item.image);
                 // setCheck(!check);
               }}

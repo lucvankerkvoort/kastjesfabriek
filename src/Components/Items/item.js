@@ -46,27 +46,6 @@ const Items = ({ title, price, pics, sold, description }) => {
       <div className="price">
         <p>€{price},00</p>
       </div>
-      {user !== "null" ? (
-        <div
-          className="remove"
-          onClick={() =>
-            db
-              .collection("items")
-              .doc(title)
-              .delete()
-              .then(() => {
-                console.log("I Run 2");
-                setTimeout(
-                  () =>
-                    dispatch({ type: "check", payload: !userData.state.check }),
-                  1000
-                );
-              })
-          }
-        >
-          X
-        </div>
-      ) : null}
     </div>
   );
 };

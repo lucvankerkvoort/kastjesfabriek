@@ -4,10 +4,10 @@
   width: 100%;
   justify-content: space-between;
   .logo {
-    width: 15%;
     display: flex;
     // border: 2px solid black;
     justify-content: center;
+    align-items: center;
     font-family: "Kalam";
     font-size: 0.7em;
   }
@@ -21,12 +21,19 @@
 @media only screen and (min-width: 600px) {
   .navbar {
     width: 100%;
+    // border: 2px solid black;
+    justify-content: start;
     .logo {
+      // border: 2px solid black;
       width: 10%;
       font-size: 1em;
+      text-align: center;
     }
     .navbar-items {
-      width: 40%;
+      width: 80%;
+
+      // border: 2px solid black;
+      justify-content: space-evenly;
     }
   }
 }
