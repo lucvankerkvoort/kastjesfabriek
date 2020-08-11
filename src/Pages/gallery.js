@@ -14,7 +14,6 @@ const Gallery = ({ picture }) => {
                 style={{
                   background: `url(${pics})`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center center",
                 }}
               />
             </Carousel.Item>

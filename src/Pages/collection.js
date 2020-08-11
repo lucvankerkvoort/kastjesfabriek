@@ -6,9 +6,21 @@ import { store } from "../Services/Store";
 
 const Collection = () => {
   const userData = useContext(store);
+  if (!userData.state.collection) {
+    userData.state.collection = JSON.parse(localStorage.getItem("collection"));
+  }
   const { collection } = userData.state;
   return (
     <>
+      <div
+        className="collection-picture"
+        style={{
+          background: `url(${collection[0].images[0]})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "200px",
+        }}
+      />
       <Title title="Collectie" />
       <div className="shop">
         {(collection || []).map((item, i) => {

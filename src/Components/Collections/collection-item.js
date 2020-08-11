@@ -38,7 +38,10 @@ const CollectionItem = ({ title }) => {
   return (
     <Link
       to="/collection"
-      onClick={() => dispatch({ type: "collection", payload: info })}
+      onClick={() => {
+        dispatch({ type: "collection", payload: info });
+        localStorage.setItem("collection", JSON.stringify(info));
+      }}
     >
       <div className="collection-item">
         <h5 className="collection-item-title">{collectionTitle()}</h5>
