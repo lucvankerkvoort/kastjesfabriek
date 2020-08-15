@@ -44,7 +44,7 @@ const Items = ({ title, price, pics, sold, description }) => {
       </div>
       {sold ? <SoldBanner /> : null}
       <div className="price">
-        <p>€{price},00</p>
+        <p>{price},00</p>
       </div>
     </div>
   );
