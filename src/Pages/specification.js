@@ -6,19 +6,24 @@ import emailjs from "emailjs-com";
 
 const Specification = (props) => {
   const [email, setEmail] = useState("");
-  const [item, setItem] = useState("");
   const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleEmail = (e) => {
     e.preventDefault();
 
     const templateParams = {
-      from_name: item + " (" + email + ")",
-      to_name: "corindafokkema@hotmail.com",
-      feedback: message,
+      from_name: ` ${title} (${email})`,
+      to_name: "luc.van.kerkvoort@gmail.com",
+      message_html: message,
     };
     emailjs
-      .send("outlook", "kastjesfabriek", templateParams, "corinda_fokkema")
+      .send(
+        "luc_van_kerkvoort",
+        "template_w911gCXB",
+        templateParams,
+        "user_rpcRGHi1Y0p1xl1IdxtTc"
+      )
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
@@ -29,7 +34,7 @@ const Specification = (props) => {
       );
     setEmail("");
     setMessage("");
-    setItem("");
+    setSuccess("Verstuurt");
   };
   const goBack = props.history.goBack;
   const userData = useContext(store);
@@ -66,21 +71,17 @@ const Specification = (props) => {
               name="email"
               type="email"
               placeholder="E-mail adres"
-              onChange={(e) => setEmail({ [e.target.name]: e.target.value })}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <input
-              name="title"
-              type="text"
-              value={`Aangaande ${title}`}
-              onChange={(e) => setItem({ [e.target.name]: e.target.value })}
-            />
+            <input name="title" type="text" value={`Aangaande ${title}`} />
             <textarea
               name="message"
               type="text"
               placeholder="Type hier je bericht"
-              onChange={(e) => setMessage({ [e.target.name]: e.target.value })}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <button>Verzenden</button>
+            <p className="send">{success}</p>
           </form>
         </div>
       </div>

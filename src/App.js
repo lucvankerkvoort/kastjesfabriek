@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Route, useHistory } from "react-router-dom";
 import { withFirebase } from "./Firebase";
 import Navbar from "./Components/Navbar/navbar";
 import Home from "./Pages/home";

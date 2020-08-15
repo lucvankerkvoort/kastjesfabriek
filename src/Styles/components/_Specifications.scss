@@ -1,12 +1,12 @@
 .specification {
-  margin: 15px;
+  margin: 25px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   .back-to-shopping {
     position: absolute;
     left: 10px;
-    top: 130px;
+    top: 150px;
     cursor: pointer;
   }
   .back-to-shopping:hover {
@@ -42,6 +42,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .send {
+        font-size: 2em;
+        text-align: center;
+        z-index: 1;
+        text-shadow: 1px 1px 2px black;
+      }
       .sending-inquiry {
         // border: 2px solid black;
         display: flex;
