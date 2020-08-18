@@ -1,16 +1,18 @@
 import React, { useContext } from "react";
 import Items from "../Components/Items/item";
 import Title from "../Components/Jumbotron/title";
+import images from "../Images/images";
 import { store } from "../Services/Store";
 
-const Collection = () => {
+const Collection = (props) => {
+  const goBack = props.history.goBack;
   const userData = useContext(store);
   if (!userData.state.collection) {
     userData.state.collection = JSON.parse(localStorage.getItem("collection"));
   }
   const { collection } = userData.state;
   return (
-    <>
+    <div className="collection-page">
       <div
         className="collection-picture"
         style={{
@@ -22,6 +24,14 @@ const Collection = () => {
       />
       <Title title="Collectie" />
       <div className="shop">
+        <img
+          src={images.leftArrow}
+          alt="left arrow"
+          width="30px"
+          height="30px"
+          id="back-to-home"
+          onClick={() => goBack()}
+        />
         {(collection || []).map((item, i) => {
           return (
             <Items
@@ -34,7 +44,7 @@ const Collection = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -38,9 +38,12 @@ const App = () => {
           path="/"
           render={() => <Home collections={collections} />}
         />
-        <Route path="/collection" component={Collection} />
+        <Route
+          path="/collection"
+          render={(props) => <Collection {...props} />}
+        />
         <Route path="/contact" component={Contact} />
-        <Route path="/shop" component={Shop} />
+        <Route path="/shop" render={(props) => <Shop {...props} />} />
         <Route path="/spec" render={(props) => <Specification {...props} />} />
         <Footer />
       </HashRouter>

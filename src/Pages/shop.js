@@ -1,14 +1,24 @@
 import React, { useContext } from "react";
 import Items from "../Components/Items/item";
 import Title from "../Components/Jumbotron/title";
-import Footer from "../Components/Footer/footer";
+import images from "../Images/images";
 import { store } from "../Services/Store";
 
-const Shop = () => {
+const Shop = (props) => {
+  const goBack = props.history.goBack;
   const userData = useContext(store);
   const { info } = userData.state;
   return (
     <>
+      <img
+        src={images.leftArrow}
+        alt="left arrow"
+        width="30px"
+        height="30px"
+        style={{ cursor: "pointer", position: "absolute", top: "250px" }}
+        id="back-to-home"
+        onClick={() => goBack()}
+      />
       <Title title="Producten" />
       <div className="shop">
         {(info || []).map((item, i) => {

@@ -2,7 +2,6 @@ import React from "react";
 import Jumbotron from "../Components/Jumbotron/jumbotron";
 import Images from "../Images/images";
 import Title from "../Components/Jumbotron/title";
-import Footer from "../Components/Footer/footer";
 import Collection from "../Components/Collections/collections";
 
 const Home = ({ collections }) => {
