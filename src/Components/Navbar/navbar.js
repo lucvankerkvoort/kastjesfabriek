@@ -17,12 +17,9 @@ const Navbar = () => {
         <Link to="/shop" style={{ textDecoration: "none", color: "black" }}>
           <p> Shop </p>
         </Link>
-        {/* <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
-          <p> About </p>
+        <Link to="/contact" style={{ textDecoration: "none", color: "black" }}>
+          <p> Contact </p>
         </Link>
-        <Link to="/help" style={{ textDecoration: "none", color: "black" }}>
-          <p> Help </p>
-        </Link> */}
       </div>
     </div>
   );

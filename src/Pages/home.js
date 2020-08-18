@@ -22,7 +22,6 @@ const Home = ({ collections }) => {
       />
       <Title title="Collecties" />
       <Collection title={collectionsArray()} collections={collections} />
-      <Footer />
     </div>
   );
 };

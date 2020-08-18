@@ -1,0 +1,48 @@
+.contact {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-info {
+    height: 50%;
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    .sending-inquiry {
+      // border: 2px solid black;
+      display: flex;
+      width: 300px;
+      flex-direction: column;
+      input {
+        margin: 5px;
+        border: none;
+        box-shadow: 2px 2px 5px black;
+
+        border-radius: 5px;
+        padding: 5px;
+      }
+      textarea {
+        height: 100px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px black;
+        padding: 5px;
+      }
+      button {
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 2px 2px 5px black;
+        padding: 5px;
+      }
+      button:active {
+        box-shadow: none;
+      }
+    }
+  }
+}
