@@ -5,7 +5,6 @@ import images from "../Images/images";
 import { store } from "../Services/Store";
 
 const Collection = (props) => {
-  const goBack = props.history.goBack;
   const userData = useContext(store);
   if (!userData.state.collection) {
     userData.state.collection = JSON.parse(localStorage.getItem("collection"));
@@ -30,7 +29,7 @@ const Collection = (props) => {
           width="30px"
           height="30px"
           id="back-to-home"
-          onClick={() => goBack()}
+          onClick={() => props.history.push("/")}
         />
         {(collection || []).map((item, i) => {
           return (

@@ -5,7 +5,6 @@ import images from "../Images/images";
 import { store } from "../Services/Store";
 
 const Shop = (props) => {
-  const goBack = props.history.goBack;
   const userData = useContext(store);
   const { info } = userData.state;
   return (
@@ -17,7 +16,7 @@ const Shop = (props) => {
         height="30px"
         style={{ cursor: "pointer", position: "absolute", top: "250px" }}
         id="back-to-home"
-        onClick={() => goBack()}
+        onClick={() => props.history.push("/")}
       />
       <Title title="Producten" />
       <div className="shop">
