@@ -42,8 +42,8 @@ const Contact = () => {
         <iframe
           title="Address"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9744.609325686444!2d4.8535921!3d52.3676578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e20d4a522ccb%3A0x2e76b22d4c3e3461!2sMarco%20Polostraat%20108HS%2C%201057%20WV%20Amsterdam%2C%20Netherlands!5e0!3m2!1sen!2sus!4v1597787548472!5m2!1sen!2sus"
-          width="600"
-          height="450"
+          width="100%"
+          height="100%"
           frameborder="0"
           style={{ border: 0 }}
           allowfullscreen=""
@@ -52,7 +52,7 @@ const Contact = () => {
         />
       </div>
       <div className="contact-info">
-        <div>
+        <div className="info">
           <p>Kastjesfabriek</p>
           <p>Tel: 0628779915</p>
           <p>Email: corindafokkema@hotmail.com</p>
