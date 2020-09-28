@@ -32,9 +32,8 @@ const CollectionItem = ({ title }) => {
           setInfo(infoArr);
         });
     }
-  }, []);
+  }, [title]);
   // console.log(images);
-  console.log(info);
   return (
     <Link
       to="/collection"

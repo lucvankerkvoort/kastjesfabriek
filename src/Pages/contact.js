@@ -13,12 +13,12 @@ const Contact = () => {
     const templateParams = {
       from_name: email,
       subject: subject,
-      to_name: "Corinda Fokkema",
+      to_name: "Kastjesfabriek",
       message_html: message,
     };
     emailjs
       .send(
-        "luc_van_kerkvoort",
+        "kastjesfabriek",
         "general",
         templateParams,
         "user_rpcRGHi1Y0p1xl1IdxtTc"
@@ -55,7 +55,7 @@ const Contact = () => {
         <div className="info">
           <p>Kastjesfabriek</p>
           <p>Tel: 0628779915</p>
-          <p>Email: corindafokkema@hotmail.com</p>
+          <p>Email: info@kastjesfabriek.nl</p>
         </div>
         <form className="sending-inquiry" onSubmit={handleEmail}>
           <input

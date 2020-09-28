@@ -14,12 +14,12 @@ const Specification = (props) => {
 
     const templateParams = {
       from_name: ` ${title} (${email})`,
-      to_name: "luc.van.kerkvoort@gmail.com",
+      to_name: "Corinda",
       message_html: message,
     };
     emailjs
       .send(
-        "luc_van_kerkvoort",
+        "kastjesfabriek",
         "template_w911gCXB",
         templateParams,
         "user_rpcRGHi1Y0p1xl1IdxtTc"

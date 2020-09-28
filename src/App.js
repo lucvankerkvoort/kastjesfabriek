@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect, useState } from "react";
 import { HashRouter, Route } from "react-router-dom";
 import { withFirebase } from "./Firebase";
@@ -15,9 +16,9 @@ import { db } from "./Firebase/Firebase";
 const App = () => {
   const [collections, setCollections] = useState("");
   const userData = useContext(store);
+  const { dispatch } = userData;
 
   useEffect((arr = []) => {
-    const { dispatch } = userData;
     db.collection("items")
       .get()
       .then((querySnapshot) => {
@@ -28,7 +29,6 @@ const App = () => {
         setCollections(arr);
       });
   }, []);
-  console.log(userData);
   return (
     <div className="App">
       <HashRouter basename="/">
