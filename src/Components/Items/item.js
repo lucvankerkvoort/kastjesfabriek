@@ -34,10 +34,13 @@ const Items = ({ title, price, pics, sold, description }) => {
       <div className="item-title">
         <h1>{title}</h1>
       </div>
-      {sold ? <SoldBanner /> : null}
-      <div className="price">
-        <p>{price},00</p>
-      </div>
+      {sold ? (
+        <SoldBanner />
+      ) : (
+        <div className="price">
+          <p>{price},00</p>
+        </div>
+      )}
     </div>
   );
 };

@@ -7,9 +7,6 @@ const Collection = ({ title }) => {
       {title.map((title, i) => (
         <CollectionItem key={i} title={title} />
       ))}
-      {/* <CollectionItem title="Thee Kastjes" picture={images.donkerGroen001} />
-      <CollectionItem title="Buikkastjes" picture={images.armyGreen001} />
-      <CollectionItem title="Sidetables" picture={images.verfRose001} /> */}
     </div>
   );
 };

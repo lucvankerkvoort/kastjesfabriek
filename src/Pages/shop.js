@@ -28,6 +28,7 @@ const Shop = (props) => {
               description={item.description}
               pics={item.images}
               price={item.price}
+              sold={item.sold}
             />
           );
         })}
