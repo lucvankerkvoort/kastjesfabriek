@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-contact">
           <p>Kastjesfabriek</p>
           <p>Tel: 0628779915</p>
-          <p>Email: corindafokkema@hotmail.com</p>
+          <p>Email: info@kastjesfabriek.nl</p>
         </div>
         <div className="misc">
           <div className="links">

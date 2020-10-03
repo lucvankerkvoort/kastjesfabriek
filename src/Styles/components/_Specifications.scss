@@ -1,6 +1,6 @@
 .specification {
   margin: 25px;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   .back-to-shopping {
@@ -16,6 +16,7 @@
   .title-spec {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     margin-bottom: 20px;
     h1 {
